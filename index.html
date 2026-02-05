@@ -1,910 +1,575 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jumial Digital Support | Premium Tech Support & Computer Repair</title>
-  <meta name="description" content="Jumial Digital Support: friendly, premium computer repair and tech support. Upgrades, Wi-Fi & printer setup, malware removal, troubleshooting. East Sussex + remote UK." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Julius Abu (Julius Osi) — CV (Two Page A4 Print-Safe)</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Jumial Digital Support",
-  "telephone": "+447876265264",
-  "areaServed": ["Bexhill", "Hastings", "Eastbourne", "Battle", "Rye", "Polegate", "Lewes", "Brighton"],
-  "url": "https://abuj07.github.io/jumial-digital-support/",
-  "sameAs": [],
-  "description": "Computer repair and tech support. Troubleshooting, repairs, upgrades, Wi-Fi fixes, printer setup, malware removal, website maintenance. East Sussex + remote UK."
-}
-</script>  
+  <!-- Better font for print + professional look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     :root{
-      --bg0:#070a12;
-      --bg1:#0a1020;
-      --card: rgba(255,255,255,.06);
-      --line: rgba(255,255,255,.10);
-      --text:#eef2ff;
-      --muted: rgba(238,242,255,.72);
-      --muted2: rgba(238,242,255,.58);
-      --accent:#5aa7ff;
-      --accent2:#8ae1ff;
-      --shadow: 0 24px 70px rgba(0,0,0,.55);
-      --r: 22px;
-      --max: 1120px;
+      --ink:#0b1220;
+      --muted:#475569;
+      --line:#cbd5e1;
+
+      --navy:#1f2a44;
+      --navy-deep:#141c2f;
+
+      --pill-bg:#eef2ff;
+      --pill-border:#c7d2fe;
+      --pill-text:#1f2a44;
+
+      --pagebg:#f8fafc;
+      --paper:#ffffff;
     }
+
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
+
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(1200px 600px at 12% 0%, rgba(90,167,255,.22), transparent 60%),
-        radial-gradient(900px 500px at 92% 10%, rgba(138,225,255,.16), transparent 55%),
-        radial-gradient(900px 600px at 50% 110%, rgba(90,167,255,.12), transparent 60%),
-        linear-gradient(180deg, var(--bg0), var(--bg1));
-      line-height:1.55;
-    }
-    a{color:inherit; text-decoration:none}
-    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
-
-    /* Top bar */
-    .topbar{
-      position:sticky; top:0; z-index:50;
-      backdrop-filter: blur(14px);
-      background: rgba(7,10,18,.62);
-      border-bottom:1px solid var(--line);
-    }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0;
-      gap:12px;
-    }
-    .brand{display:flex; align-items:center; gap:12px; min-width: 220px;}
-    .logoWrap{
-      display:flex; align-items:center; gap:10px;
-      padding:8px 10px;
-      border-radius:16px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.05);
-    }
-    .logoImg{
-      height:42px;
-      width:auto;
-      display:block;
-      filter:none;
+      font-family: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      color:var(--ink);
+      background:var(--pagebg);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
 
-    .brand .name{font-weight:800; letter-spacing:.3px}
-    .brand .tag{font-size:12px; color:var(--muted2); margin-top:2px}
-
-    .links{display:flex; gap:16px; align-items:center; flex-wrap:wrap}
-    .links a{font-size:14px; color:var(--muted); font-weight:650}
-    .links a:hover{color:var(--text)}
-
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:10px;
-      padding:10px 14px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.04);
-      font-weight:800;
-      transition: transform .12s ease, background .12s ease, border-color .12s ease;
-      cursor:pointer;
-    }
-    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.16)}
-    .btn.primary{
-      border:0;
-      background: linear-gradient(135deg, rgba(90,167,255,.95), rgba(138,225,255,.85));
-      color:#061022;
-    }
-    .hamburger{display:none}
-    @media (max-width: 920px){
-      .links{display:none}
-      .hamburger{display:inline-flex}
-    }
-
-    /* Mobile menu */
-    .mobileMenu{
-      display:none;
-      padding:0 0 14px;
-    }
-    .mobileMenu a{
-      display:block;
-      padding:10px 0;
-      color:var(--muted);
-      font-weight:700;
-      border-top:1px solid var(--line);
-    }
-    .mobileMenu a:hover{color:var(--text)}
-
-    /* Hero */
-    .hero{padding:54px 0 16px}
-    .heroGrid{
-      display:grid;
-      grid-template-columns: 1.35fr .65fr;
-      gap:16px;
-      align-items:stretch;
-    }
-    @media (max-width: 920px){ .heroGrid{grid-template-columns:1fr} }
-
-    .card{
-      background: var(--card);
-      border:1px solid var(--line);
-      border-radius: var(--r);
-      box-shadow: var(--shadow);
-      padding:22px;
-    }
-    .kicker{
-      display:inline-flex; align-items:center; gap:10px;
-      font-size:13px; color:var(--muted);
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      padding:8px 12px;
-      border-radius:999px;
-    }
-    h1{margin:14px 0 10px; font-size:46px; line-height:1.08; letter-spacing:-.5px}
-    @media (max-width: 540px){ h1{font-size:36px} }
-    .lead{margin:0; color:var(--muted); font-size:16px}
-    .ctas{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px}
-    .pillRow{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px}
-    .pill{
-      font-size:13px; color:var(--muted);
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      padding:7px 10px;
-      border-radius:999px;
-    }
-
-    .sideTitle{margin:0 0 10px; font-size:18px}
-    .kv{display:grid; gap:12px}
-    .kv .item{
-      background: rgba(255,255,255,.04);
-      border:1px solid var(--line);
-      border-radius: 18px;
-      padding:14px;
-    }
-    .kv b{display:block; margin-bottom:4px}
-    .small{font-size:12px; color:var(--muted2)}
-    .note{
-      margin-top:12px;
-      border-left:3px solid rgba(138,225,255,.75);
-      background: rgba(255,255,255,.03);
+    /* Screen container */
+    .page{
+      max-width:980px;
+      margin:18px auto;
+      background:var(--paper);
+      border:1px solid #e2e8f0;
       border-radius:14px;
-      padding:10px 12px;
-      color:var(--muted);
-      font-size:13px;
+      box-shadow:0 10px 34px rgba(2,6,23,.10);
+      overflow:hidden;
     }
 
-    /* Sections */
-    section{padding:20px 0}
-    .sectionHead{
-      display:flex; align-items:flex-end; justify-content:space-between;
-      gap:12px; margin-bottom:12px;
+    /* ===== HEADER ===== */
+    header.top{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      gap:18px;
+      padding:22px 26px 12px;
+      border-bottom:2px solid var(--line);
     }
-    .sectionHead h2{margin:0; font-size:24px}
-    .sectionHead p{margin:0; color:var(--muted2)}
-    .grid3{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px}
-    @media (max-width: 920px){ .grid3{grid-template-columns:1fr} }
 
-    .service h3{margin:0 0 6px; font-size:18px}
-    .service p{margin:0; color:var(--muted)}
-    .metaRow{
-      display:flex; align-items:center; justify-content:space-between;
-      margin-top:12px;
-      padding-top:12px;
-      border-top:1px solid var(--line);
-      color:var(--muted2);
+    .name{
+      font-size:30px;
+      line-height:1.05;
+      font-weight:800;
+      margin:0;
+      letter-spacing:-.2px;
+      color:var(--navy);
+    }
+
+    .title{
+      margin:6px 0 0;
       font-size:14px;
-      gap:10px;
+      font-weight:800;
+      color:var(--ink);
     }
-    .badge{
-      font-weight:900;
-      color:#061022;
-      background: linear-gradient(135deg, rgba(90,167,255,.95), rgba(138,225,255,.85));
+
+    .pill{
+      display:inline-block;
       padding:6px 10px;
+      border:1px solid var(--pill-border);
+      background:var(--pill-bg);
+      color:var(--pill-text);
       border-radius:999px;
-      font-size:12px;
+      font-weight:800;
+      font-size:11.4px;
+      margin-top:9px;
+      letter-spacing:.01em;
       white-space:nowrap;
     }
 
-    .split{display:grid; grid-template-columns:1fr 1fr; gap:14px}
-    @media (max-width: 920px){ .split{grid-template-columns:1fr} }
-    ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
-    .divider{height:1px; background:var(--line); margin:14px 0}
-
-    footer{
-      margin-top:22px;
-      border-top:1px solid var(--line);
-      padding:28px 0 42px;
-      color:var(--muted2);
-    }
-    .footRow{display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px}
-        /* Make dropdown lists readable everywhere (desktop + mobile) */
-    select {
-      color: var(--text);                    /* closed select text stays white */
-      background: rgba(255,255,255,.03);     /* keep your premium dark look */
-    }
-    
-    select option {
-      color: #061022 !important;             /* options text dark */
-      background: #ffffff !important;        /* options background white */
-    }
-    
-    /* Optional: improves appearance on Safari/iOS */
-    select:focus {
-      outline: none;
+    .meta{
+      text-align:right;
+      font-size:12.2px;
+      color:var(--muted);
+      line-height:1.5;
     }
 
-  </style>
-
-</head>
-
-
-<body>
-  <header class="topbar">
-    <div class="wrap">
-      <div class="nav">
-        <div class="brand">
-            <!-- Put your transparent logo in: assets/jumial-logo-transparent.png -->
-            <img class="logoImg" src="assets/jumial-logo-transparent.png" alt="Jumial Digital Support logo">
-          <div>
-            <div class="name">Jumial Digital Support</div>
-            <div class="tag">Premium IT support</div>
-          </div>
-        </div>
-
-        <nav class="links" aria-label="Primary">
-          <a href="#services">Services</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#areas">Areas</a>
-          <a href="#reviews">Reviews</a>
-          <a href="#contact">Contact</a>
-          <a href="#retainers">Retainers</a>
-          <a href="#book">Book</a>
-        </nav>
-
-        <div style="display:flex; gap:10px; align-items:center">
-          <a class="btn primary" href="#contact">Book a job</a>
-          <button class="btn hamburger" id="menuBtn" aria-label="Open menu" type="button">Menu</button>
-        </div>
-      </div>
-
-      <nav class="mobileMenu" id="mobileMenu" aria-label="Mobile">
-        <a href="#services">Services</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#retainers">Retainers</a>
-        <a href="#book">Book</a>
-        <a href="#areas">Areas</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="wrap">
-    <section class="hero">
-      <div class="heroGrid">
-        <div class="card">
-          <div class="kicker">Premium IT support • Fast response • Clear, professional service</div>
-          <h1>Premium IT support for homes and small businesses.</h1>
-          <p class="lead">
-          Reliable troubleshooting, upgrades, Wi-Fi optimisation, printer setup, malware removal, and device migrations, delivered with clean workmanship & clear communication.
-          </p>
-
-          <div class="ctas">
-            <a class="btn primary" href="tel:+447876265264">Call</a>
-            <a class="btn" href="https://wa.me/447876265264">WhatsApp</a>
-            <!-- Optional: change this to your real email -->
-            <a class="btn" href="mailto:jumialdigitalsupport@gmail.com">Email</a>
-          </div>
-
-          <div class="pillRow">
-  <span class="pill">On-site & remote support</span>
-  <span class="pill">Transparent pricing</span>
-  <span class="pill">Data care & confidentiality</span>
-  <span class="pill">Tidy, documented work</span>
-</div>
-        </div>
-
-        <aside class="card">
-          <h3 class="sideTitle">Quick facts</h3>
-          <div class="kv">
-            <div class="item">
-              <b>Typical visit</b>
-              <span class="small">30–120 mins (issue dependent)</span>
-            </div>
-            <div class="item">
-              <b>What customers like</b>
-              <span class="small">Clear explanations, no waffle, tidy work</span>
-            </div>
-            <div class="item">
-              <b>Payments</b>
-              <span class="small">Bank transfer / cash</span>
-            </div>
-          </div>
-          <div class="note">
-            If you can, have your device password ready so we can test properly (or set a temporary one).
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="sectionHead">
-        <h2>Services</h2>
-        <p>Common jobs we handle</p>
-      </div>
-
-      <div class="grid3">
-        <div class="card service">
-          <h3>Repairs & troubleshooting</h3>
-          <p>Slow devices, boot issues, crashing apps, overheating, blue screens, odd errors.</p>
-          <div class="metaRow"><span>On-site or remote</span><span class="badge">Popular</span></div>
-        </div>
-
-        <div class="card service">
-          <h3>Upgrades</h3>
-          <p>SSD & RAM upgrades, clean installs, performance tune-ups, backups.</p>
-          <div class="metaRow"><span>Faster & smoother</span><span class="badge">Boost</span></div>
-        </div>
-
-        <div class="card service">
-          <h3>Home tech setup</h3>
-          <p>Wi-Fi extenders, printers, smart devices, email setup, account tidy-ups.</p>
-          <div class="metaRow"><span>Less stress</span><span class="badge">Setup</span></div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="process">
-  <div class="sectionHead">
-    <h2>How it works</h2>
-    <p>Professional process, no guesswork</p>
-  </div>
-
-  <div class="grid3">
-    <div class="card service">
-      <h3>1) Diagnose & confirm</h3>
-      <p>We identify the cause, explain options clearly, and confirm cost before proceeding.</p>
-    </div>
-    <div class="card service">
-      <h3>2) Fix properly</h3>
-      <p>Clean workmanship, minimal disruption, and sensible recommendations (no upselling).</p>
-    </div>
-    <div class="card service">
-      <h3>3) Test & handover</h3>
-      <p>We test, document what was done, and show you how to avoid the same issue again.</p>
-    </div>
-  </div>
-
-  <div class="note">
-    Your data and privacy are treated with care. If a part or licence is needed, we agree it upfront and provide receipts.
-  </div>
-</section>
-
-    <!-- PRICING (Home vs Business toggle) -->
-    <section id="pricing">
-      <div class="sectionHead">
-        <h2>Pricing</h2>
-        <p>Clear rates (please confirm scope before work starts)</p>
-      </div>
-
-      <div class="card" style="padding:14px; margin-bottom:14px">
-        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:space-between">
-          <div class="small" style="color:var(--muted)">
-            Charged fairly • No surprise extras • Receipts for any parts
-          </div>
-
-          <div style="display:flex; gap:10px; flex-wrap:wrap">
-            <button class="btn primary" id="btnHome" type="button">Home tech support</button>
-            <button class="btn" id="btnBiz" type="button">Small business</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- HOME -->
-      <div id="pricingHome">
-        <div class="grid3">
-          <div class="card service">
-            <h3>Visit & support fees</h3>
-            <p style="color:var(--muted); margin:0 0 10px">
-              Ideal for first-time call-outs and diagnosis.
-            </p>
-            <div class="metaRow"><span>Home visit & diagnosis</span><span class="badge">£55</span></div>
-            <div class="metaRow"><span>Remote support (30-min blocks)</span><span class="badge">£45/hr</span></div>
-            <div class="metaRow"><span>On-site labour (home visits)</span><span class="badge">£75/hr</span></div>
-          </div>
-
-          <div class="card service">
-            <h3>Core tech support</h3>
-            <p style="color:var(--muted); margin:0 0 10px">
-              Most common fixes and improvements.
-            </p>
-            <div class="metaRow"><span>Slow computer tune-up & optimisation</span><span class="badge">£95</span></div>
-            <div class="metaRow"><span>Virus & malware removal</span><span class="badge">£110</span></div>
-            <div class="metaRow"><span>Wi-Fi & printer troubleshooting</span><span class="badge">£85</span></div>
-          </div>
-
-          <div class="card service">
-            <h3>Setup, repairs & data</h3>
-            <p style="color:var(--muted); margin:0 0 10px">
-              Upgrades, migrations and device support.
-            </p>
-            <div class="metaRow"><span>Desktop & laptop repairs & upgrades</span><span class="badge">£75/hr</span></div>
-            <div class="metaRow"><span>Data transfer & backup</span><span class="badge">£85–£125</span></div>
-            <div class="metaRow"><span>Email & account help</span><span class="badge">£85–£125</span></div>
-            <div class="metaRow"><span>New desktop or laptop setup</span><span class="badge">£95</span></div>
-            <div class="metaRow"><span>New setup + data transfer (migration)</span><span class="badge">£115</span></div>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:14px">
-          <h3 style="margin:0 0 8px">Additional services</h3>
-
-          <div class="grid3" style="margin-top:10px">
-            <div class="card service" style="box-shadow:none; background:rgba(255,255,255,.04)">
-              <h3>Website support</h3>
-              <p>Squarespace, WordPress & similar platforms</p>
-              <div class="metaRow"><span>From</span><span class="badge">£75/hr</span></div>
-            </div>
-
-            <div class="card service" style="box-shadow:none; background:rgba(255,255,255,.04)">
-              <h3>Tech guidance (1-to-1)</h3>
-              <p>Patient, non-technical tuition</p>
-              <div class="metaRow"><span>From</span><span class="badge">£60/hr</span></div>
-            </div>
-
-            <div class="card service" style="box-shadow:none; background:rgba(255,255,255,.04)">
-              <h3>Advice & networking</h3>
-              <p>Pre-buy advice + home network optimisation</p>
-              <div class="metaRow"><span>Device purchase advice</span><span class="badge">£60</span></div>
-              <div class="metaRow"><span>Home network optimisation</span><span class="badge">from £85</span></div>
-            </div>
-          </div>
-
-          <div class="note" style="margin-top:14px">
-            Prices can vary depending on device condition, access, and complexity. You’ll always get confirmation before anything chargeable begins.
-          </div>
-        </div>
-      </div>
-
-      <!-- BUSINESS -->
-      <div id="pricingBiz" style="display:none">
-        <div class="grid3">
-          <div class="card service">
-            <h3>Business support rates</h3>
-            <p style="color:var(--muted); margin:0 0 10px">
-              For sole traders, small teams & growing businesses.
-            </p>
-            <div class="metaRow"><span>Remote business support (30-min blocks)</span><span class="badge">£60/hr</span></div>
-            <div class="metaRow"><span>On-site business support (min 1 hour)</span><span class="badge">£90/hr</span></div>
-            <div class="metaRow"><span>Full day on-site (up to 7 hours)</span><span class="badge">£560/day</span></div>
-          </div>
-
-          <div class="card service">
-            <h3>Computers & devices</h3>
-            <p style="color:var(--muted); margin:0 0 10px">
-              Setup, repairs and upgrades for work devices.
-            </p>
-            <div class="metaRow"><span>Staff laptop & desktop setup</span><span class="badge">£110/device</span></div>
-            <div class="metaRow"><span>Device replacement & data migration</span><span class="badge">£135/device</span></div>
-            <div class="metaRow"><span>Repairs / performance issues (on-site)</span><span class="badge">£90/hr</span></div>
-            <div class="metaRow"><span>Hardware upgrades (RAM/SSD)</span><span class="badge">£90/hr</span></div>
-          </div>
-
-          <div class="card service">
-            <h3>Email & productivity</h3>
-            <p style="color:var(--muted); margin:0 0 10px">
-              Microsoft 365 / Google Workspace and access issues.
-            </p>
-            <div class="metaRow"><span>M365 / Google Workspace setup</span><span class="badge">£90/hr</span></div>
-            <div class="metaRow"><span>Email troubleshooting (remote)</span><span class="badge">£60/hr</span></div>
-            <div class="metaRow"><span>Email troubleshooting (on-site)</span><span class="badge">£90/hr</span></div>
-            <div class="metaRow"><span>Shared mailboxes & calendars</span><span class="badge">£90/hr</span></div>
-          </div>
-        </div>
-
-        <div class="grid3" style="margin-top:14px">
-          <div class="card service">
-            <h3>Networks, Wi-Fi & printing</h3>
-            <p style="color:var(--muted); margin:0 0 10px">
-              Setup, optimisation and troubleshooting.
-            </p>
-            <div class="metaRow"><span>Business Wi-Fi setup / optimisation</span><span class="badge">from £110</span></div>
-            <div class="metaRow"><span>Printer setup & shared printing</span><span class="badge">from £110</span></div>
-            <div class="metaRow"><span>Network troubleshooting</span><span class="badge">£90/hr</span></div>
-          </div>
-
-          <div class="card service">
-            <h3>Data, backup & security</h3>
-            <p style="color:var(--muted); margin:0 0 10px">
-              Protect business data and reduce downtime.
-            </p>
-            <div class="metaRow"><span>Data transfer & backup</span><span class="badge">£110–£160</span></div>
-            <div class="metaRow"><span>Backup health check</span><span class="badge">£90/hr</span></div>
-          </div>
-
-          <div class="card service">
-            <h3>Consultation & planning</h3>
-            <p style="color:var(--muted); margin:0 0 10px">
-              Buying advice, planning and practical guidance.
-            </p>
-            <div class="metaRow"><span>IT consultation & planning</span><span class="badge">£85/hr</span></div>
-            <div class="metaRow"><span>Device & software purchase advice</span><span class="badge">£85/hr</span></div>
-          </div>
-        </div>
-
-        <div class="note" style="margin-top:14px">
-          Minimum 1-hour charge for business support. Prices exclude hardware, licences & subscriptions. Best-effort support (no SLA unless agreed). Scope agreed before work begins.
-        </div>
-      </div>
-    </section>
-    
-    <section id="retainers">
-  <div class="sectionHead">
-    <h2>IT Support Retainers</h2>
-    <p>Tiered plans for growing teams (priority response & discounted rates)</p>
-  </div>
-
-  <!-- 1–4 Staff -->
-  <h3 style="margin:18px 0 8px; font-size:22px; color:var(--text)">For teams with 1–4 staff</h3>
-  <div class="grid3">
-    <div class="card service">
-      <h3>Starter (1–4)</h3>
-      <div class="metaRow"><span>Price</span><span class="badge">£180 / mo</span></div>
-      <div class="metaRow"><span>Included</span><span class="badge">3 hrs remote</span></div>
-      <div class="metaRow"><span>Priority</span><span class="badge">Yes</span></div>
-      <div class="note" style="margin-top:10px">
-        Quick remote problem resolution and priority support when you need it most.
-      </div>
-    </div>
-
-    <div class="card service">
-      <h3>Essential (1–4)</h3>
-      <div class="metaRow"><span>Price</span><span class="badge">£300 / mo</span></div>
-      <div class="metaRow"><span>Included</span><span class="badge">6 hrs remote</span></div>
-      <div class="metaRow"><span>On-site</span><span class="badge">Half-day / quarter</span></div>
-      <div class="note" style="margin-top:10px">
-        Some on-site check-ins plus remote troubleshooting — ideal for steady support.
-      </div>
-    </div>
-  </div>
-
-  <!-- 5–10 Staff -->
-  <h3 style="margin:18px 0 8px; font-size:22px; color:var(--text)">For teams with 5–10 staff</h3>
-  <div class="grid3">
-    <div class="card service">
-      <h3>Growth (5–10)</h3>
-      <div class="metaRow"><span>Price</span><span class="badge">£420 / mo</span></div>
-      <div class="metaRow"><span>Included</span><span class="badge">8 hrs remote</span></div>
-      <div class="metaRow"><span>On-site</span><span class="badge">Half-day / quarter</span></div>
-      <div class="note" style="margin-top:10px">
-        Strong ongoing support with proactive checks and scheduled visits.
-      </div>
-    </div>
-
-    <div class="card service">
-      <h3>Pro (5–10)</h3>
-      <div class="metaRow"><span>Price</span><span class="badge">£620 / mo</span></div>
-      <div class="metaRow"><span>Included</span><span class="badge">12 hrs remote</span></div>
-      <div class="metaRow"><span>On-site</span><span class="badge">Full day / quarter</span></div>
-      <div class="note" style="margin-top:10px">
-        Additional time for optimisation, project support, and detailed reviews.
-      </div>
-    </div>
-  </div>
-
-  <!-- 11–50 Staff -->
-  <h3 style="margin:18px 0 8px; font-size:22px; color:var(--text)">For teams with 11–50 staff</h3>
-  <div class="grid3">
-    <div class="card service">
-      <h3>Business+ (11–50)</h3>
-      <div class="metaRow"><span>Price</span><span class="badge">£900 / mo</span></div>
-      <div class="metaRow"><span>Included</span><span class="badge">16 hrs remote</span></div>
-      <div class="metaRow"><span>On-site</span><span class="badge">Full day / quarter</span></div>
-      <div class="note" style="margin-top:10px">
-        Substantial support for larger teams and critical systems coverage.
-      </div>
-    </div>
-
-    <div class="card service">
-      <h3>Enterprise (11–50)</h3>
-      <div class="metaRow"><span>Price</span><span class="badge">£1,300 / mo</span></div>
-      <div class="metaRow"><span>Included</span><span class="badge">24 hrs remote</span></div>
-      <div class="metaRow"><span>On-site</span><span class="badge">2 full days / quarter</span></div>
-      <div class="note" style="margin-top:10px">
-        High-coverage support — ideal for multi-device networks and uptime focus.
-      </div>
-    </div>
-  </div>
-
-  <!-- Retainer details -->
-  <div class="card" style="margin-top:14px">
-    <h3 style="margin:0 0 8px">Additional information</h3>
-    <p style="margin:0; color:var(--muted)">
-      Extra hours beyond the retainer are billed at discounted rates: remote (£55/hr) and on-site (£85/hr). Hardware, licences, and subscriptions are separate.
-    </p>
-    <div class="note" style="margin-top:14px">
-      Retainers are billed monthly. Time can be used across staff within the same business. Unused hours do not roll over unless agreed.
-    </div>
-
-    <div class="ctas" style="margin-top:14px">
-      <a class="btn primary" href="https://wa.me/447876265264">Ask about retainers</a>
-      <button class="btn" id="rtCallback" type="button">Request a call-back</button>
-      <a class="btn" href="#book">Book a slot</a>
-    </div>
-
-  </div>
-</section>
-
-    <section id="areas">
-      <div class="sectionHead">
-        <h2>Areas covered</h2>
-        <p>Local visits + remote UK support</p>
-      </div>
-
-      <div class="card">
-        <div class="split">
-          <div>
-            <h3 style="margin:0 0 8px">Home visits</h3>
-            <p style="margin:0; color:var(--muted)">
-              Bexhill • Hastings • Eastbourne • Battle • Rye • Polegate • Lewes (and nearby areas).
-            </p>
-            <ul>
-              <li>Appointments available</li>
-              <li>Evenings/weekends sometimes possible</li>
-              <li>Travel charges may apply outside core area</li>
-            </ul>
-          </div>
-          <div>
-            <h3 style="margin:0 0 8px">Remote support</h3>
-            <p style="margin:0; color:var(--muted)">
-              Anywhere in the UK for many software issues.
-            </p>
-            <ul>
-              <li>Software installs and fixes</li>
-              <li>Email and account setups</li>
-              <li>Guided troubleshooting</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="reviews">
-      <div class="sectionHead">
-        <h2>Reviews</h2>
-        <p>Real customer messages from social media and general feedback</p>
-      </div>
-
-      <div class="grid3">
-        <div class="card">
-          <p style="margin:0 0 10px">“Sorted my laptop quickly and explained everything in plain English.”</p>
-          <div class="small">— Customer name, Town</div>
-        </div>
-        <div class="card">
-          <p style="margin:0 0 10px">“Fixed my Wi-Fi and printer setup. Patient, professional, and tidy.”</p>
-          <div class="small">— Customer name, Town</div>
-        </div>
-        <div class="card">
-          <p style="margin:0 0 10px">“Honest advice — didn’t push repairs I didn’t need.”</p>
-          <div class="small">— Customer name, Town</div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="book">
-  <div class="sectionHead">
-    <h2>Book a slot</h2>
-    <p>Send details, we’ll confirm availability</p>
-  </div>
-
-  <div class="card">
-    <p style="margin:0; color:var(--muted)">
-      Fill this in and tap <b>Send on WhatsApp</b>. It’ll open a message template with everything included.
-    </p>
-
-    <div class="divider"></div>
-
-    <div class="split">
-      <div>
-        <label style="display:block; font-size:13px; color:var(--muted2); margin:10px 0 6px">Name</label>
-        <input id="bkName" placeholder="Your name" style="width:100%; padding:12px 12px; border-radius:14px; border:1px solid var(--line); background: rgba(255,255,255,.03); color:var(--text); font-size:14px; outline:none;">
-      </div>
-
-      <div>
-        <label style="display:block; font-size:13px; color:var(--muted2); margin:10px 0 6px">Service type</label>
-        <select id="bkType" style="width:100%; padding:12px 12px; border-radius:14px; border:1px solid var(--line); background: rgba(255,255,255,.03); color:var(--text); font-size:14px; outline:none;">
-          <option>Home visit</option>
-          <option>Remote support</option>
-          <option>Business on-site</option>
-          <option>Business remote</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="split">
-      <div>
-        <label style="display:block; font-size:13px; color:var(--muted2); margin:10px 0 6px">Town / location</label>
-        <input id="bkTown" placeholder="e.g. Bexhill / Hastings / Eastbourne" style="width:100%; padding:12px 12px; border-radius:14px; border:1px solid var(--line); background: rgba(255,255,255,.03); color:var(--text); font-size:14px; outline:none;">
-      </div>
-
-      <div>
-        <label style="display:block; font-size:13px; color:var(--muted2); margin:10px 0 6px">Preferred time</label>
-        <input id="bkTime" placeholder="e.g. Today after 6pm / Saturday morning" style="width:100%; padding:12px 12px; border-radius:14px; border:1px solid var(--line); background: rgba(255,255,255,.03); color:var(--text); font-size:14px; outline:none;">
-      </div>
-    </div>
-
-    <label style="display:block; font-size:13px; color:var(--muted2); margin:10px 0 6px">What’s the issue?</label>
-    <textarea id="bkIssue" placeholder="Device type, what’s happening, any error message, and anything you’ve already tried..."
-      style="width:100%; min-height:110px; padding:12px 12px; border-radius:14px; border:1px solid var(--line); background: rgba(255,255,255,.03); color:var(--text); font-size:14px; outline:none; resize:vertical;"></textarea>
-
-    <div class="ctas" style="margin-top:14px">
-      <button class="btn primary" id="bkSend" type="button">Send on WhatsApp</button>
-      <a class="btn" href="tel:+447876265264">Call instead</a>
-      <a class="btn" href="#pricing">Check pricing</a>
-    </div>
-
-    <div class="note" style="margin-top:14px">
-      For remote sessions, have your device powered on and connected to the internet. For home visits, share your town and parking/access notes if relevant.
-    </div>
-  </div>
-</section>
-
-    <section id="contact">
-      <div class="sectionHead">
-        <h2>Contact</h2>
-        <p>Fastest response = WhatsApp</p>
-      </div>
-
-      <div class="card">
-        <p style="margin:0; color:var(--muted)">
-          Message with: device type, what’s happening, any error message, and your town (for home visits).
-        </p>
-        <div class="divider"></div>
-
-          <div class="split">
-            <div>
-              <h3 style="margin:0 0 6px">Business hours</h3>
-              <p style="margin:0; color:var(--muted)">
-                Mon–Fri: 9:00am–6:00pm<br>
-                Sat: 10:00am–4:00pm<br>
-                Sun: Limited availability (urgent only)
-              </p>
-            </div>
-          
-            <div>
-              <h3 style="margin:0 0 6px">Response target</h3>
-              <p style="margin:0; color:var(--muted)">
-                WhatsApp: typically within <b>2 hours</b> during business hours.<br>
-                Remote sessions can often be arranged the same day.
-              </p>
-            </div>
-          </div>
-
-
-        <div class="ctas" style="margin-top:14px">
-          <a class="btn primary" href="https://wa.me/447876265264">WhatsApp</a>
-          <a class="btn" href="tel:+447876265264">Call</a>
-          <a class="btn" href="mailto:jumialdigitalsupport@gmail.com">Email</a>
-        </div>
-
-        <div class="divider"></div>
-        <div class="small">
-          Want a custom domain like <b>jumialdigitalsupport.co.uk</b>? You can keep hosting free on GitHub Pages and only pay for the domain.
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <div class="footRow">
-        <div>
-          <div style="font-weight:900; color:var(--text)">Jumial Digital Support</div>
-          <div class="small">Call/WhatsApp: 07876 265264</div>
-        </div>
-        <div class="small">© <span id="y"></span> Jumial Digital Support</div>
-      </div>
-      <div class="small" style="margin-top:10px">
-        Privacy: your details are used only to respond to your enquiry.
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // Footer year
-    document.getElementById("y").textContent = new Date().getFullYear();
-
-    // Mobile menu
-    const btn = document.getElementById("menuBtn");
-    const menu = document.getElementById("mobileMenu");
-    btn?.addEventListener("click", () => {
-      const open = menu.style.display === "block";
-      menu.style.display = open ? "none" : "block";
-      btn.textContent = open ? "Menu" : "Close";
-    });
-
-    // Pricing toggle
-    (function(){
-      const btnHome = document.getElementById("btnHome");
-      const btnBiz  = document.getElementById("btnBiz");
-      const home    = document.getElementById("pricingHome");
-      const biz     = document.getElementById("pricingBiz");
-
-      function setMode(mode){
-        const isHome = mode === "home";
-        home.style.display = isHome ? "block" : "none";
-        biz.style.display  = isHome ? "none"  : "block";
-
-        btnHome.className = isHome ? "btn primary" : "btn";
-        btnBiz.className  = isHome ? "btn" : "btn primary";
+    .meta a{
+      color:inherit;
+      text-decoration:none;
+      border-bottom:1px solid rgba(71,85,105,.35);
+    }
+
+    /* ===== BODY ===== */
+    .body{
+      display:grid;
+      grid-template-columns:300px 1fr;
+      min-width:0;
+    }
+
+    /* ===== SIDEBAR ===== */
+    aside.sidebar{
+      background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+      color:#f1f5ff;
+      padding:18px;
+      min-width:0;
+    }
+
+    .side-h{
+      font-size:11px;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      font-weight:900;
+      color:#ffffff;
+      margin:14px 0 8px;
+      padding-bottom:6px;
+      border-bottom:1px solid rgba(255,255,255,.22);
+    }
+
+    .side-list{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+
+    .side-list li{
+      margin:0 0 7px;
+      font-size:12.4px;
+      color:#f1f5ff;
+    }
+
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:7px;
+      margin-top:8px;
+    }
+
+    .chip{
+      font-size:11.2px;
+      padding:5px 9px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.32);
+      color:#ffffff;
+      background: rgba(255,255,255,.10);
+      font-weight:800;
+    }
+
+    /* ===== MAIN ===== */
+    main.main{
+      padding:16px 22px 18px;
+      min-width:0;
+    }
+
+    h2{
+      font-size:12px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      color:var(--navy-deep);
+      margin:14px 0 8px;
+      padding-bottom:7px;
+      border-bottom:1px solid var(--line);
+      font-weight:900;
+    }
+
+    p{margin:0 0 8px}
+    .muted{color:var(--muted)}
+
+    .job{
+      margin-top:10px;
+      padding:12px 12px 10px;
+      border:1px solid #e2e8f0;
+      border-radius:12px;
+      background:#ffffff;
+      break-inside:auto;
+      page-break-inside:auto;
+    }
+
+    .jobhead{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom:6px;
+      align-items:flex-start;
+    }
+
+    .role{font-weight:900; font-size:14.2px}
+    .where{color:var(--muted); font-size:12.2px; margin-top:2px; font-weight:650}
+    .when{color:var(--muted); font-size:12.2px; white-space:nowrap; font-weight:800}
+
+    ul{
+      margin:7px 0 0 18px;
+      padding:0;
+    }
+
+    li{
+      margin:0 0 6px;
+      font-size:13px;
+    }
+
+    .tagline{
+      display:flex;
+      flex-wrap:wrap;
+      gap:7px;
+      margin-top:8px;
+    }
+
+    .tag{
+      font-size:11.1px;
+      padding:5px 9px;
+      border-radius:999px;
+      border:1px solid #e2e8f0;
+      color:var(--muted);
+      background:#f8fafc;
+      font-weight:800;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      margin-top:10px;
+    }
+
+    .mini h3{
+      margin:0 0 6px;
+      font-size:12.2px;
+      font-weight:900;
+      color:var(--ink);
+    }
+
+    .mini ul{margin:6px 0 0 18px}
+    .mini li{font-size:12.7px}
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 920px){
+      header.top{padding:18px 16px 12px;}
+      .body{grid-template-columns:1fr;}
+      aside.sidebar{border-bottom:1px solid rgba(255,255,255,.25);}
+      .meta{text-align:left;}
+      main.main{padding:16px;}
+      .two-col{grid-template-columns:1fr;}
+      .pill{white-space:normal;}
+    }
+
+    /* ===== PRINT (A4 SAFE TWO-PAGE) ===== */
+    @page{
+      size: A4;
+      margin: 10mm;
+    }
+
+    @media print{
+      body{background:#fff; -webkit-print-color-adjust: exact; print-color-adjust: exact;}
+      *{ -webkit-print-color-adjust: exact; print-color-adjust: exact;}
+
+      .page{
+        width:190mm;
+        max-width:190mm;
+        margin:0;
+        border:none;
+        box-shadow:none;
+        border-radius:0;
+        overflow:visible;
       }
 
-      btnHome?.addEventListener("click", () => setMode("home"));
-      btnBiz?.addEventListener("click", () => setMode("biz"));
-    })();
-    // Book a slot → WhatsApp template
-(function(){
-  const send = document.getElementById("bkSend");
-  if(!send) return;
+      .body{
+        grid-template-columns:62mm 1fr;
+        column-gap:6mm;
+      }
 
-  send.addEventListener("click", () => {
-    const name = (document.getElementById("bkName")?.value || "").trim();
-    const type = (document.getElementById("bkType")?.value || "").trim();
-    const town = (document.getElementById("bkTown")?.value || "").trim();
-    const time = (document.getElementById("bkTime")?.value || "").trim();
-    const issue = (document.getElementById("bkIssue")?.value || "").trim();
+      header.top{
+        padding:16px 16px 10px;
+        gap:12px;
+      }
+      .name{font-size:24px;}
+      .title{font-size:12.5px;}
+      .pill{
+        font-size:10.5px;
+        padding:5px 8px;
+        margin-top:7px;
+        white-space:normal;
+      }
+      .meta{font-size:11px; line-height:1.35;}
 
-    const msg =
-`Hi Jumial Digital Support,
-Name: ${name || "-"}
-Service: ${type || "-"}
-Town/Location: ${town || "-"}
-Preferred time: ${time || "-"}
-Issue: ${issue || "-"}
+      aside.sidebar{
+        padding:12px;
+        background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%) !important;
+        color:#f1f5ff !important;
+      }
 
-Please confirm availability and next steps.`;
+      .side-h{
+        font-size:9.8px;
+        margin:10px 0 6px;
+        padding-bottom:5px;
+      }
+      .side-list li{
+        font-size:10.8px;
+        margin:0 0 5px;
+      }
 
-    const url = "https://wa.me/447876265264?text=" + encodeURIComponent(msg);
-    window.open(url, "_blank");
-  });
-})();
-    // Retainers → Request a call-back (prefilled WhatsApp)
-(function(){
-  const btn = document.getElementById("rtCallback");
-  if(!btn) return;
+      .chips{gap:6px; margin-top:6px;}
+      .chip{
+        font-size:10px;
+        padding:4px 7px;
+      }
 
-  btn.addEventListener("click", () => {
-    const msg =
-`Hi Jumial Digital Support,
-I’m interested in an IT support retainer.
+      main.main{
+        padding:12px 12px 12px;
+      }
+      h2{
+        font-size:10.8px;
+        margin:12px 0 6px;
+        padding-bottom:5px;
+      }
+      p{margin:0 0 6px;}
+      ul{margin:6px 0 0 16px;}
+      li{font-size:11.4px; margin:0 0 4px;}
 
-Business name:
-Number of staff (1–4 / 5–10 / 11–50):
-Preferred plan (Starter/Essential/Growth/Pro/Business+/Enterprise):
-Best time to call:
-Main issue(s) / goals:
+      .job{
+        margin-top:8px;
+        padding:10px 10px 8px;
+        border-radius:10px;
+        page-break-inside:avoid;
+      }
+      .role{font-size:12.4px;}
+      .where,.when{font-size:11px;}
 
-Please call me back to discuss options.`;
+      .tagline{margin-top:6px; gap:6px;}
+      .tag{font-size:10px; padding:4px 7px;}
 
-    const url = "https://wa.me/447876265264?text=" + encodeURIComponent(msg);
-    window.open(url, "_blank");
-  });
-})();
+      .two-col{gap:10px; margin-top:8px;}
+      .mini h3{font-size:11.2px;}
+      .mini li{font-size:11.2px;}
 
-  </script>
-  
-  <a class="btn primary" href="https://wa.me/447876265264"
-   aria-label="WhatsApp Jumial Digital Support"
-   style="position:fixed; right:16px; bottom:16px; z-index:9999;">
-   WhatsApp to book
-  </a>
+      a{border-bottom:none; text-decoration:none;}
+    }
+  </style>
+</head>
 
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="top">
+      <div>
+        <h1 class="name">Julius Abu <span style="font-weight:700; font-size:14px; color:#475569;">(also known as Julius Osi)</span></h1>
+        <div class="title">Senior Test Analyst (Regulatory Delivery • Business Analysis Support • Governance & Assurance)</div>
+        <div class="pill">Enterprise Testing & QA • Test Automation • Playwright • .NET • JavaScript • BDD • Azure DevOps • SQL</div>
+      </div>
+
+      <div class="meta">
+        07862 458 247<br/>
+        <a href="mailto:abuj07@gmail.com">juliusabu21@gmail.com</a><br/>
+        <a href="https://www.linkedin.com/in/julesosi/">linkedin.com/in/julesosi</a>
+      </div>
+    </header>
+
+    <!-- BODY -->
+    <section class="body">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar" aria-label="Sidebar">
+
+        <div class="side-h">Core capabilities</div>
+        <ul class="side-list">
+          <li>Functional testing (SIT/UAT/regression)</li>
+          <li>Test planning, evidence & traceability</li>
+          <li>Defect/issue management</li>
+          <li>Requirements clarification & acceptance criteria</li>
+          <li>Gap analysis (current vs target)</li>
+          <li>Process mapping (As-Is/To-Be)</li>
+          <li>Workshops, walkthroughs & show & tells</li>
+          <li>Governance support (RAID, reporting, controls)</li>
+          <li>Risk-aware assurance & release readiness</li>
+        </ul>
+
+        <div class="side-h">Tools & platforms</div>
+        <div class="chips" aria-label="Tools">
+          <span class="chip">Azure DevOps</span>
+          <span class="chip">Azure Pipelines</span>
+          <span class="chip">Azure Repos</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">Dynamics 365</span>
+          <span class="chip">SQL</span>
+          <span class="chip">API Testing</span>
+          <span class="chip">Playwright</span>
+          <span class="chip">.NET</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Reqnroll (BDD)</span>
+          <span class="chip">Jira</span>
+          <span class="chip">Confluence</span>
+          <span class="chip">Visio</span>
+          <span class="chip">Mural</span>
+        </div>
+
+        <div class="side-h">Design & web literacy</div>
+        <ul class="side-list">
+          <li>UX principles & usability thinking (trained)</li>
+          <li>Figma (wireframe review & light editing)</li>
+          <li>HTML/CSS (read/edit existing pages)</li>
+          <li>Front-end behaviour awareness</li>
+        </ul>
+
+        <div class="side-h">Domains</div>
+        <ul class="side-list">
+          <li>Public/private sector</li>
+          <li>Technical analysis for business support</li>
+          <li>Pensions & finance</li>
+          <li>Regulatory environments</li>
+          <li>Customer service operations</li>
+          <li>Education and business </li>
+        </ul>
+
+        <div class="side-h">Education</div>
+        <ul class="side-list">
+          <li><strong>BSc Computer Science</strong><br><span style="opacity:.9;">University of Jos</span></li>
+        </ul>
+
+        <div class="side-h">Certifications</div>
+        <ul class="side-list">
+          <li>ISTQB® Certified Tester (CTFL v4.0)- in progress (2026)</li>
+          <li>BCS Certificate in Requirements Engineering- in progress (2026)</li>
+          <li>PRINCE2® Foundation (2019)</li>
+          <li>ITIL® Foundation (2019)</li>
+          <li>Oracle Database SQL Expert (2015)</li>
+        </ul>
+
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main" aria-label="Main content">
+
+        <h2>Profile</h2>
+        <p class="muted" style="font-size:14px; line-height:1.45; text-align:justify;">
+          Delivery-focused Senior Test Analyst supporting complex change in regulated environments. Combines functional testing and UAT leadership with
+          business analysis support, requirements clarity, evidence-based assurance and governance reporting. Known for explaining how systems behave, closing gaps between requirements and implementation,
+          and surfacing risk early using data, metrics and audit-ready documentation. Experienced working in consultancy-style delivery environments with multiple stakeholders and delivery partners.
+        </p>
+
+        <h2>Experience</h2>
+
+        <section class="job" aria-label="Role 1">
+          <div class="jobhead">
+            <div>
+              <div class="role">Senior Test Analyst</div>
+              <div class="where">The Pensions Regulator (TPR) · UK (Hybrid)</div>
+            </div>
+            <div class="when">Nov 2023 – Date</div>
+          </div>
+          <ul>
+            <li>Test lead for complex Dynamics 365 Case Management workstreams and numerous pensions and financial regulatory software products, owning SIT and UAT strategy, execution and reporting within a regulated delivery environment.</li>
+            <li>Designed, built and maintained automated test frameworks, supporting regression coverage and repeatable quality assurance across releases.</li>
+            <li>Integrated automated tests into Azure DevOps CI/CD pipelines, updating, executing and monitoring test runs as part of release and platform upgrade activities.</li>
+            <li>Performed API, data and end-to-end workflow validation using SQL and system integrations to ensure data integrity, business rules and operational readiness.</li>
+            <li>Worked closely with developers, BAs and delivery leads to clarify requirements, acceptance criteria and technical dependencies, reducing ambiguity and rework.</li>
+            <li>Produced clear test reporting, dashboards and quality metrics in Azure DevOps, supporting governance forums, risk decisions and release sign-off.</li>
+          </ul>
+          <div class="tagline">
+            <span class="tag">Test automation</span>
+            <span class="tag">CI/CD (Azure Pipelines)</span>
+            <span class="tag">Dynamics 365</span>
+            <span class="tag">API & data testing</span>
+            <span class="tag">Regulated delivery</span>
+          </div>
+        </section>
+
+        <section class="job" aria-label="Role 2">
+          <div class="jobhead">
+            <div>
+              <div class="role">Test Analyst</div>
+              <div class="where">The Pensions Regulator (TPR) · UK (Hybrid)</div>
+            </div>
+            <div class="when">May 2022 – Nov 2023</div>
+          </div>
+          <ul>
+            <li>Executed functional, regression, SIT and UAT testing across CRM, web and data platforms, supporting frequent releases and infrastructure changes.</li>
+            <li>Supported development and execution of automated tests, contributing to regression coverage and test data preparation.</li>
+            <li>Validated system behaviour, integrations and data migrations within Dynamics 365 environments, using SQL to verify data accuracy and completeness.</li>
+            <li>Logged, triaged and re-tested defects through to resolution, working closely with developers and delivery teams.</li>
+            <li>Provided structured test reports, evidence and quality insights to support governance reviews and release readiness.</li>
+          </ul>
+          <div class="tagline">
+            <span class="tag">Manual & automated testing</span>
+            <span class="tag">SQL validation</span>
+            <span class="tag">Dynamics 365</span>
+            <span class="tag">Agile delivery</span>
+          </div>
+        </section>
+
+        <section class="job" aria-label="Role 3">
+          <div class="jobhead">
+            <div>
+              <div class="role">Technical Support Officer — SELT & UK Examinations</div>
+              <div class="where">British Council · Nigeria</div>
+            </div>
+            <div class="when">Aug 2016 – Sep 2019</div>
+          </div>
+          <ul>
+            <li>Supported delivery of high-stakes UK examinations and Secure English Language Tests, maintaining strict compliance and reliability.</li>
+            <li>Coordinated technical readiness for computer-based testing, including setup, incident resolution and live-session monitoring.</li>
+            <li>Trained staff and improved documentation to strengthen operational capability and reduce avoidable issues.</li>
+          </ul>
+        </section>
+
+        <section class="job" aria-label="Earlier career summary">
+          <div class="jobhead">
+            <div>
+              <div class="role">Earlier Career: Enterprise IT Delivery, Governance, Training & Programme Leadership</div>
+              <div class="where">Various organisations · 2009 – 2022</div>
+            </div>
+            <div class="when"></div>
+          </div>
+          <ul>
+            <li>Supported delivery and operation of business-critical digital services in compliance-sensitive environments, ensuring reliability, continuity and clear operational readiness.</li>
+            <li>Held senior responsibility for programme coordination, standards and capability development across institutional IT and digital initiatives, operating within compliance-sensitive environments.</li>
+            <li>Worked with mixed audiences (operational teams, managers and technical support) to elicit needs, clarify constraints and translate requirements into actionable steps and documented procedures.</li>
+            <li>Produced clear documentation (process guides, runbooks, checklists and status updates) to support governance, auditability and consistent delivery across teams, including PMO artefacts such as RAID logs, delivery reports and action tracking.</li>
+            <li>Provided incident support and structured problem investigation, communicating progress and impacts in plain language to non-technical stakeholders.</li>
+            <li>Operated independently as a training and assessment consultant (2019–2022), supporting candidates preparing for UK university and international examinations, including remote delivery following relocation to the UK.</li>
+          </ul>
+          <div class="tagline">
+            <span class="tag">Project support</span>
+            <span class="tag">Governance & controls</span>
+            <span class="tag">Change & adoption</span>
+          </div>
+        </section>
+
+        <div class="two-col" aria-label="Additional sections">
+          <section class="mini">
+            <h3>Strengths</h3>
+            <ul>
+              <li>Comfortable across testing, requirements clarification, business analysis support and delivery assurance</li>
+              <li>Strong documentation discipline (traceability, evidence, audit readiness)</li>
+              <li>Clear communication of system behaviour to non-technical stakeholders</li>
+              <li>Data confidence: SQL for validation and sense-checking</li>
+              <li>Working with distributed and third-party teams across complex delivery environments</li>
+            </ul>
+          </section>
+
+          <section class="mini">
+            <h3>Selected deliverables</h3>
+            <ul>
+              <li>Test strategy and approach aligned to programme scope, risk profile and regulatory constraints</li>
+              <li>SIT and UAT planning, coordination and execution supporting business readiness and release confidence</li>
+              <li>Quality, risk and dependency insight (including dashboards and summaries) to inform delivery, governance and release decisions</li>
+              <li>Requirements and acceptance criteria clarification (BDD-style where appropriate) to reduce ambiguity and rework</li>
+            </ul>
+          </section>
+        </div>
+
+        <h2>Interests</h2>
+        <p class="muted" style="font-size:11.7px; line-height:1.4;">
+          Private/public sector, Finance, Pensions, Digital transformation • Digital governance & accountability • Responsible AI adoption
+        </p>
+
+        <p class="muted" style="margin-top:10px; font-size:10px; line-height:1.3;">
+          <strong>Note:</strong> LinkedIn profile may show the name “Julius Osi” — “Julius Abu” is used for formal applications and checks.
+        </p>
+
+      </main>
+    </section>
+  </div>
 </body>
 </html>
